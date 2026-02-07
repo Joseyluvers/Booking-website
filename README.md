@@ -1,4 +1,4 @@
-# 📅 Joseyluvers - Professional Booking System
+# Professional Booking System
 
 A modern, responsive, and high-performance booking website designed for seamless appointment scheduling. Built with vanilla CSS and JavaScript for optimal performance across all devices.
 
@@ -422,4 +422,5 @@ Looking forward to working with you! 🚀
 
 **Version**: 1.0.0  
 **Last Updated**: February 5, 2026  
+
 **Status**: Production Ready ✅
