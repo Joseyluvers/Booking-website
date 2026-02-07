@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Book your appointment easily and securely" />
+  <title>Book an Appointment - Professional Booking System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      <h2>Joseyluvers</h2>
+    </div>
+    <div class="navbar-menu">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#booking" class="nav-link">Book Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Header -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">Book Your Perfect Appointment</h1>
+      <p class="hero-subtitle">Fast • Easy • Secure • Professional</p>
+      <p class="hero-description">Schedule your service in minutes with our seamless booking system</p>
+      <a href="#services" class="btn btn-primary btn-large">Get Started</a>
+    </div>
+  </div>
+</header>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Premium Services</h2>
+      <p>Choose from our wide range of professional services</p>
+    </div>
+    
+    <div class="service-grid">
+      <div class="service-card" data-service="Haircut" data-price="25">
+        <div class="service-icon">✂️</div>
+        <h3>Professional Haircut</h3>
+        <p class="service-duration">30 Minutes</p>
+        <div class="service-details">
+          <p class="service-description">Classic and modern haircut styles from experienced barbers</p>
+        </div>
+        <div class="service-price">$25</div>
+        <button class="btn btn-service">Select Service</button>
+      </div>
+
+      <div class="service-card" data-service="Hair Styling" data-price="35">
+        <div class="service-icon">💇</div>
+        <h3>Hair Styling</h3>
+        <p class="service-duration">45 Minutes</p>
+        <div class="service-details">
+          <p class="service-description">Professional styling for any occasion</p>
+        </div>
+        <div class="service-price">$35</div>
+        <button class="btn btn-service">Select Service</button>
+      </div>
+
+      <div class="service-card" data-service="Consultation" data-price="40">
+        <div class="service-icon">💬</div>
+        <h3>Consultation</h3>
+        <p class="service-duration">1 Hour</p>
+        <div class="service-details">
+          <p class="service-description">One-on-one expert consultation and advice</p>
+        </div>
+        <div class="service-price">$40</div>
+        <button class="btn btn-service">Select Service</button>
+      </div>
+
+      <div class="service-card" data-service="Beard Grooming" data-price="20">
+        <div class="service-icon">🧔</div>
+        <h3>Beard Grooming</h3>
+        <p class="service-duration">20 Minutes</p>
+        <div class="service-details">
+          <p class="service-description">Complete beard trimming and grooming service</p>
+        </div>
+        <div class="service-price">$20</div>
+        <button class="btn btn-service">Select Service</button>
+      </div>
+
+      <div class="service-card" data-service="Coloring" data-price="50">
+        <div class="service-icon">🎨</div>
+        <h3>Hair Coloring</h3>
+        <p class="service-duration">1.5 Hours</p>
+        <div class="service-details">
+          <p class="service-description">Professional hair coloring with premium products</p>
+        </div>
+        <div class="service-price">$50</div>
+        <button class="btn btn-service">Select Service</button>
+      </div>
+
+      <div class="service-card" data-service="Spa Treatment" data-price="60">
+        <div class="service-icon">🧖</div>
+        <h3>Spa Treatment</h3>
+        <p class="service-duration">1 Hour</p>
+        <div class="service-details">
+          <p class="service-description">Relaxing spa and wellness treatment</p>
+        </div>
+        <div class="service-price">$60</div>
+        <button class="btn btn-service">Select Service</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Section -->
+<section id="booking" class="booking-section">
+  <div class="container">
+    <div class="booking-wrapper">
+      <div class="booking-content">
+        <h2>Complete Your Booking</h2>
+        <p>Fill in your details to confirm your appointment</p>
+
+        <form id="bookingForm" class="booking-form" novalidate>
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input 
+              type="text" 
+              id="fullName" 
+              placeholder="Oluseye Joseph" 
+              required 
+              aria-label="Full Name"
+            />
+            <span class="error-message" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input 
+              type="email" 
+              id="email" 
+              placeholder="oluseye@example.com" 
+              required 
+              aria-label="Email Address"
+            />
+            <span class="error-message" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              placeholder="+2348105033804" 
+              required 
+              aria-label="Phone Number"
+            />
+            <span class="error-message" id="phoneError"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input 
+                type="date" 
+                id="date" 
+                required 
+                aria-label="Preferred Date"
+              />
+              <span class="error-message" id="dateError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="time">Preferred Time</label>
+              <input 
+                type="time" 
+                id="time" 
+                required 
+                aria-label="Preferred Time"
+              />
+              <span class="error-message" id="timeError"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Selected Service</label>
+            <div class="service-display">
+              <span id="selectedServiceName" class="service-name">No service selected</span>
+              <span id="selectedServicePrice" class="service-price-badge">$0</span>
+            </div>
+            <input type="hidden" id="selectedService" />
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Additional Notes</label>
+            <textarea 
+              id="notes" 
+              placeholder="Any special requests? Let us know..." 
+              rows="3" 
+              aria-label="Additional Notes"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit">Confirm Booking</button>
+        </form>
+      </div>
+
+      <div class="booking-summary">
+        <h3>Booking Summary</h3>
+        <div class="summary-item">
+          <span>Service:</span>
+          <strong id="summaryService">Not selected</strong>
+        </div>
+        <div class="summary-item">
+          <span>Date:</span>
+          <strong id="summaryDate">-</strong>
+        </div>
+        <div class="summary-item">
+          <span>Time:</span>
+          <strong id="summaryTime">-</strong>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-item total">
+          <span>Total Price:</span>
+          <strong id="summaryPrice">$0</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Success Modal -->
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-success-icon">✓</div>
+    <h2>Booking Confirmed!</h2>
+    <p id="confirmationMessage">Your appointment has been successfully booked.</p>
+    <p class="modal-details">A confirmation email has been sent to your inbox.</p>
+    <button class="btn btn-primary" onclick="closeModal()">Done</button>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Ayinmode Joseph Seye. All rights reserved. | Secure & Professional Booking System</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
